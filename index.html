@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Premeir Test HTML5" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -21,47 +22,49 @@
         <p class="font-thin text-sm ml-2">DG@anesrif.dz</p>
       </div>
     </header>
-    <main class="flex">
+    <main class="flex h-[calc(100vh-96px)]">
       <aside
-        class="font-bold text-white w-40 h-[calc(100vh-96px)] bg-[#412FD3] flex pl-4 pt-24"
+        class="static font-bold text-white w-[12rem] bg-[#412FD3] flex pl-4 pt-24 flex-col h-full justify-between"
       >
-      <Div class="flex-row flex justify-between">
-        <ul>
-          <li>Tableau de Bord</li>
-          <li>Produits</li>
-          <li>Fournisseurs</li>
-          <li>Clients</li>
-        </ul>
-        <ul>
-          <li>deconnexion</li>
-        </ul>
-      </Div>
-        
-        </ul>
+        <div class="flex flex-col static">
+          <ul>
+            <li>Tableau de Bord</li>
+            <li>Produits</li>
+            <li>Fournisseurs</li>
+            <li>Clients</li>
+          </ul>
+        </div>
+        <div class="relative bottom-4">
+          <p>deconnexion</p>
+        </div>
       </aside>
       <section class="w-full bg-white">
         <nav
-          class="font-bold text-2xl w-full py-6 h-20 text-black bg-slate-50 px-4 space-x-40 flex justify-between"
+          class="w-full py-6 h-18 text-gray-800 bg-slate-50 px-4 space-x-40 flex justify-between"
         >
-          <div><p>Dashboard</p></div>
-          <div>
-            <input type="text" placeholder="search  " class="rounded-xl px-2" />
-          </div>
+          <h1 class="font-bold max-[600px]:hidden">Dashboard</h1>
+          <input
+            type="text"
+            placeholder="search"
+            class="rounded-xl px-2 sm:w-full md:w-1/2 lg:w-1/3"
+          />
         </nav>
-        <section class="grid grid-cols-4 gap-4 p-4">
+        <section
+          class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4"
+        >
           <div class="rounded-xl p-2 bg-[#BB88F9] hover:bg-[#9e67e0] shadow-md">
             <p>Current MRR</p>
             <p class="font-bold text-2xl">$ 12.4K</p>
           </div>
-          <div class="rounded-xl p-2 bg-[#F0EDF2]">
+          <div class="rounded-xl p-2 bg-[#91a4d8] hover:bg-[#5879d4] shadow-md">
             <p>Current Customers</p>
             <p class="font-bold text-2xl">16.601</p>
           </div>
-          <div class="rounded-xl p-2 bg-[#BB88F9]">
+          <div class="rounded-xl p-2 bg-[#88f9d3] hover:bg-[#5fb89a] shadow-md">
             <p>Active Customers</p>
             <p class="font-bold text-2xl">33 %</p>
           </div>
-          <div class="rounded-xl p-2 bg-[#F0EDF2]">
+          <div class="rounded-xl p-2 bg-[#F0EDF2] hover:bg-[#b3b2b4] shadow-md">
             <p>Churn Rate</p>
             <p class="font-bold text-2xl">2 %</p>
           </div>
