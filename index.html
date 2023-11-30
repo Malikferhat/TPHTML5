@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <title>TP HTML5</title>
+  </head>
+  <body class="bg-white dark:bg-slate-800 font-sans h-screen">
+    <header class="py-2 px-6 text-white bg-gray-800 flex justify-between">
+      <div class="flex flex-row items-center">
+        <span class="material-symbols-outlined"> call </span>>
+        <p class="font-thin text-sm ml-2">0555-55-55-55</p>
+      </div>
+      <div class="flex flex-row items-center">
+        <span class="material-symbols-outlined"> mail </span>
+        <p class="font-thin text-sm ml-2">DG@anesrif.dz</p>
+      </div>
+    </header>
+    <main class="flex">
+      <aside
+        class="font-bold text-white w-40 h-[calc(100vh-96px)] bg-[#412FD3] flex pl-4 pt-24"
+      >
+      <Div class="flex-row flex justify-between">
+        <ul>
+          <li>Tableau de Bord</li>
+          <li>Produits</li>
+          <li>Fournisseurs</li>
+          <li>Clients</li>
+        </ul>
+        <ul>
+          <li>deconnexion</li>
+        </ul>
+      </Div>
+        
+        </ul>
+      </aside>
+      <section class="w-full bg-white">
+        <nav
+          class="font-bold text-2xl w-full py-6 h-20 text-black bg-slate-50 px-4 space-x-40 flex justify-between"
+        >
+          <div><p>Dashboard</p></div>
+          <div>
+            <input type="text" placeholder="search  " class="rounded-xl px-2" />
+          </div>
+        </nav>
+        <section class="grid grid-cols-4 gap-4 p-4">
+          <div class="rounded-xl p-2 bg-[#BB88F9] hover:bg-[#9e67e0] shadow-md">
+            <p>Current MRR</p>
+            <p class="font-bold text-2xl">$ 12.4K</p>
+          </div>
+          <div class="rounded-xl p-2 bg-[#F0EDF2]">
+            <p>Current Customers</p>
+            <p class="font-bold text-2xl">16.601</p>
+          </div>
+          <div class="rounded-xl p-2 bg-[#BB88F9]">
+            <p>Active Customers</p>
+            <p class="font-bold text-2xl">33 %</p>
+          </div>
+          <div class="rounded-xl p-2 bg-[#F0EDF2]">
+            <p>Churn Rate</p>
+            <p class="font-bold text-2xl">2 %</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="py-4 text-white bg-gray-500 flex justify-center">
+      &copy; ANESRIF. Tout Droits réservés.
+    </footer>
+  </body>
+</html>
