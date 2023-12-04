@@ -7,7 +7,9 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    " />
     <link href="./dist/output.css" rel="stylesheet" />
     <title>TP HTML5</title>
   </head>
@@ -27,14 +29,35 @@
         class="static font-bold text-white w-[12rem] bg-[#412FD3] flex pl-4 pt-24 flex-col h-full justify-between"
       >
         <div class="flex flex-col static">
-          <ul>
-            <li>Tableau de Bord</li>
-            <li>Produits</li>
-            <li>Fournisseurs</li>
-            <li>Clients</li>
+          <ul class="flex flex-col space-y-4">
+            <div class="flex flex-row items center">
+              <span class="material-symbols-outlined"> dashboard </span>
+              <li>Tableau de Bord</li>
+            </div>
+            <div class="flex flex-row items center">
+              <span class="material-symbols-outlined">
+                category
+              </span>
+              <li>Produits</li>
+            </div>
+            <div class="flex flex-row items center">
+              <span class="material-symbols-outlined">
+                household_supplies
+              </span>
+              <li>Fournisseurs</li>
+            </div>
+            <div class="flex flex-row items center">
+              <span class="material-symbols-outlined">
+                group
+              </span>
+              <li>Clients</li>
+            </div>
           </ul>
         </div>
-        <div class="relative bottom-4">
+        <div class="relative bottom-4 flex flex-row items center">
+          <span class="material-symbols-outlined">
+            logout
+          </span>
           <p>deconnexion</p>
         </div>
       </aside>
